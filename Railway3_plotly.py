@@ -81,6 +81,8 @@ df.info()
 
 app =dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server =app.server
+
 fig5 =go.Figure()
 fig5.add_scattergl(x=df["Date"], y=df["AAPL.Close"],line={'color': 'black'})
 
